@@ -1,11 +1,20 @@
+@font-face{
+  font-family: Rusilla;
+  src: url("../font/rusilla.otf");
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy', sans-serif;
-
+    font-family: 'Clash Display', sans-serif;    
 }
 
+:root{
+  --blk: #1d1d1f;
+  --sblk: #101011;
+  --wht: #f5f5f7;
+}
 
 html,body{
     
@@ -13,12 +22,12 @@ html,body{
     height: 100%;
     scroll-behavior: smooth;
     transition: all .3s linear;
-    /* background-color: #c2c2c2; */
+    background-color: var(--blk);
     /* cursor: none; */
 }
 
 body.bgcolor{
-  background-color: #c2c2c2;
+  background-color: var(--sblk);
 }
 
 #navbar{
@@ -32,16 +41,16 @@ body.bgcolor{
     justify-content: center;
     align-items: center;
     padding: .5rem;
-    /* transform: rotate(180deg); */
     transition: all 1s;
+    /* color: var(--wht); */
   }
 
-#circle{
-    background-color: #000;
+.circle{
     height: 1.2rem;
     width: 1.2rem;
     border-radius: 50%;
     margin: .2rem;
+    background-color: var(--wht);
 }
 
 /* #circle:nth-child(1){
@@ -71,7 +80,7 @@ body.bgcolor{
   transition-delay: 0s;
 }
 .menutoggle.active .navigation__inner {
-  background-color: #fff;
+  background-color: var(--blk);
   transform: translate(0, 0);
   transition: transform 300ms linear, background-color 0s linear 599ms;
 }
@@ -106,7 +115,7 @@ body.bgcolor{
   height: 100%;
   top: 0;
   right: 0;
-  background-color: #fff;
+  background-color: var(--blk);
   border-radius: 50%;
   z-index: -1;
   transition: all 300ms linear;
@@ -166,7 +175,7 @@ body.bgcolor{
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    padding: 10rem;
+    /* padding: 10rem; */
     padding-bottom: 5rem;
 }
 
@@ -181,6 +190,7 @@ body.bgcolor{
     z-index: 12;
     overflow: hidden;
     height: 4rem;
+    color: var(--wht);
 }
 
 .nav-link span{
@@ -195,7 +205,7 @@ body.bgcolor{
 }
 
 /* .nav-link:hover{
-    color: #000000;
+    color: var(--wht)000;
 } */
 
 
@@ -233,7 +243,7 @@ body.bgcolor{
 .nav-icon span{
   width: 5px;
   height: 5px;
-  background-color: #000;
+  background-color: var(--wht);
   display: block;
   border-radius: 50%;
   position: absolute;
@@ -345,11 +355,11 @@ body.bgcolor{
 
 
 #social{
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 5rem;
+  width: 7rem;
   /* padding: 2rem; */
 }
 
@@ -358,10 +368,42 @@ body.bgcolor{
 }
 
 a{
-  color: #000;
+  color: var(--wht);
 }
 
 /* ------------------------------------------------------------------------------ */
+
+#brand-name{
+  
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--wht);
+  /* font-weight: 900; */
+}
+
+#brand-name>h1{
+  font-weight: 900;
+  font-size: 7vw;
+  font-family: Rusilla;
+
+}
+
+#fontdiff>h1{
+  font-family: Rusilla;
+  font-weight: 900;
+  margin: 0 10rem;
+  font-size: 10vw;
+}
+
+
+
+/*------------------------------------------------------------------------------- Main section -------------------------------------------------------------------------------------- */
+
+
+
 
 /* 
 

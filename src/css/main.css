@@ -1,8 +1,13 @@
+:root{
+  --blk: #1d1d1f;
+  --wht: #f5f5f7;
+}
+
 body {
   position: absolute;
   top: 0;
   margin: 0;
-  background: #fff;
+  background: var(--blk);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -58,7 +63,7 @@ body {
 @supports (mix-blend-mode: exclusion) {
   .cb-cursor.-exclusion:before,
   .cb-cursor.-opaque:before {
-    background: white;
+    background: var(--wht);
   }
 }
 
@@ -122,6 +127,6 @@ body {
 }
 
 .cb-demo {
-  background: #fff;
+  background: var(--wht);
 }
 

@@ -50,7 +50,7 @@ navlink.forEach(frame => {
         })
     
         gsap.to(frame.children, {
-            color: "#000",
+            color: "#f5f5f7",
             duration: .4,
             y : 0
         })
@@ -69,6 +69,7 @@ icons.forEach (icon => {
     icon.addEventListener('click', (event) => {
       icon.classList.toggle("open");
       nav.classList.toggle('active');
+    //   For changing background color when toggled menus
       document.body.classList.toggle('bgcolor');
     });
   });
