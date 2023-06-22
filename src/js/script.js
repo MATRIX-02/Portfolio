@@ -92,3 +92,8 @@ window.addEventListener("mousemove", function(dets){
     })
 })
 
+$("#brand-name").hide();
+
+// $(".loader-wrapper").fadeOut(5000);
+setTimeout(function(){ $("#brand-name").show(); }, 6500); 
+setTimeout(function(){ $(".loader-wrapper").fadeOut(); }, 6500); 

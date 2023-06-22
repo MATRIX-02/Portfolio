@@ -30,6 +30,91 @@ body.bgcolor{
   background-color: var(--sblk);
 }
 
+/* ------------------------------------------LOADER------------------------------------------------------ */
+
+.loader-wrapper{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--blk);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo{
+  animation: fill 0.5s ease forwards 3.5s;
+}
+
+#logo path:nth-child(1){
+  stroke-dasharray:  674.225830078125;
+  stroke-dashoffset:  674.225830078125;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(2){
+  stroke-dasharray: 902.7244262695312;
+  stroke-dashoffset: 902.7244262695312;
+  animation: line-anim 2s ease forwards;
+}
+#logo path:nth-child(3){
+  stroke-dasharray: 538.457275390625;
+  stroke-dashoffset: 538.457275390625;
+  animation: line-anim 2s ease forwards 0.3s;
+
+}
+#logo path:nth-child(4){
+  stroke-dasharray: 495.8458251953125;
+  stroke-dashoffset: 495.8458251953125;
+  animation: line-anim 2s ease forwards 0.6s;
+
+}
+#logo path:nth-child(5){
+  stroke-dasharray: 653.8280029296875;
+  stroke-dashoffset: 653.8280029296875;
+  animation: line-anim 2s ease forwards 0.9s;
+
+}
+#logo path:nth-child(6){
+  stroke-dasharray: 584.433349609375;
+  stroke-dashoffset: 584.433349609375;
+  animation: line-anim 2s ease forwards 1.2s;
+
+}
+#logo path:nth-child(7){
+  stroke-dasharray: 488.903076171875;
+  stroke-dashoffset: 488.903076171875;
+  animation: line-anim 2s ease forwards 1.5s;
+
+}
+#logo path:nth-child(8){
+  stroke-dasharray: 1647.444091796875;
+  stroke-dashoffset: 1647.444091796875;
+  animation: line-anim 2s ease forwards 1.8s;
+}
+
+
+
+@keyframes line-anim{
+  to{
+      stroke-dashoffset: 0;
+  }
+}
+
+
+@keyframes fill{
+  from{
+    fill: transparent;
+  }
+  to{
+    fill: var(--wht);
+  }
+}
+
+/* --------------------------------------------------------------------NAVBAR------------------------------------------------------------------------------------------------ */
+
 #navbar{
     margin:2rem 5rem;
     display: flex;
@@ -104,7 +189,7 @@ body.bgcolor{
   justify-content: center;
   right: 0;
   overflow: hidden;
-  z-index: 999999;
+  z-index: 20;
   transform: translate(100%, 0);
   transition: transform 500ms linear, background-color 0s linear 300ms;
 }
@@ -371,181 +456,20 @@ a{
   color: var(--wht);
 }
 
-/* ------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------------------BRAND NAME--------------------------------------------------------------------------------------------------- */
 
 #brand-name{
-  
-  margin-top: 10rem;
+  height: 64.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  color: var(--wht);
-  /* font-weight: 900; */
 }
 
-#brand-name>h1{
-  font-weight: 900;
-  font-size: 7vw;
-  font-family: Rusilla;
-
-}
-
-#fontdiff>h1{
-  font-family: Rusilla;
-  font-weight: 900;
-  margin: 0 10rem;
-  font-size: 10vw;
+#brand-name>svg{
+  fill: var(--wht);
 }
 
 
 
-/*------------------------------------------------------------------------------- Main section -------------------------------------------------------------------------------------- */
+/*------------------------------------------------------------------------------- Main section ------------------------------------------------------------------------------------------------------ */
 
-
-
-
-/* 
-
-
-
-#menuToggle
-{
-  display: block;
-  position: relative;
-  top: 1px;
-  left: 1px;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; 
-  z-index: 11; /* and place it over the hamburger 
-  
-  -webkit-touch-callout: none;
-}
-
-
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 10;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- 
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- 
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- 
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- 
-#menu
-{
-  position: absolute;
-  width: 40vw;
-  height: 100vh;
-  padding: 50px;
-  padding-top: 125px;
-
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari 
-  
-  transform-origin: 0% 0%;
-  transform: translate(100%, -10%);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menuToggle input:checked ~ #menu{
-  transform: translate(-80%, -10%);
-  position: fixed;
-}
-
-#menuToggle input:checked ~ #menutoggle{
-  /* transform: translate(-80%, -10%); 
-  position: fixed;
-}
-*/
-
-
-
- 
