@@ -130,3 +130,8 @@ body {
   background: var(--wht);
 }
 
+@media(max-width: 1024px){
+  .cb-cursor{
+    display: none;
+  }
+}

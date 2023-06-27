@@ -12,9 +12,15 @@ const lerp = (x, y, a) => x * (1 - a) + y * a;
 
 // For sticky cursor
 
+// For LOADER 
+$("#brand-name").hide();
+
+// $(".loader-wrapper").fadeOut(5000);
+setTimeout(function(){ $("#brand-name").show(); }, 6500); 
+setTimeout(function(){ $(".loader-wrapper").fadeOut(); }, 6500); 
 
 
-
+// For MENU HOVER EFFEFT 
 navlink.forEach(frame => {
     frame.addEventListener("mousemove", function(dets){
 
@@ -92,8 +98,4 @@ window.addEventListener("mousemove", function(dets){
     })
 })
 
-$("#brand-name").hide();
 
-// $(".loader-wrapper").fadeOut(5000);
-setTimeout(function(){ $("#brand-name").show(); }, 6500); 
-setTimeout(function(){ $(".loader-wrapper").fadeOut(); }, 6500); 
