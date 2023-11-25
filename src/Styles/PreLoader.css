@@ -2,7 +2,7 @@
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	font-family: "Roslindale Display";
+	/* font-family: "Roslindale Display"; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -40,7 +40,7 @@
 	content: attr(data-text);
 	position: absolute;
 
-	color: #f33901;
+	color: #234fff;
 	overflow: hidden;
 	width: 0%;
 	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
@@ -51,7 +51,7 @@
 .loader-wrapper:nth-child(3) > h1::before {
 	content: attr(data-text);
 	position: absolute;
-	color: #f30101;
+	color: #9136ff;
 	overflow: hidden;
 	width: 0%;
 	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
@@ -62,7 +62,7 @@
 .loader-wrapper:nth-child(6) > h1::before {
 	content: attr(data-text);
 	position: absolute;
-	color: #eff301ef;
+	color: #e436ff;
 	overflow: hidden;
 	width: 0%;
 	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
