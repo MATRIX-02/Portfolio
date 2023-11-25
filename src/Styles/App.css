@@ -5,7 +5,7 @@
 @import "./Logo.css";
 @import "./menu.css";
 @import "./content.css";
-
+@import "./project-card.css";
 
 * {
 	margin: 0;

@@ -1,10 +1,16 @@
+import ProjectCard from "./project-card";
+
 const Content = () => {
 	return (
 		<div className="content-container">
-			<div>Card</div>
-			<div>Card</div>
-			<div>Card</div>
-			<div>Card</div>
+			<ProjectCard />
+			<ProjectCard />
+			<ProjectCard />
+			<ProjectCard />
+			<ProjectCard />
+			<ProjectCard />
+			<ProjectCard />
+			<ProjectCard />
 		</div>
 	);
 };

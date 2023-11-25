@@ -39,7 +39,8 @@
 .loader-wrapper:nth-child(2) > h1::before {
 	content: attr(data-text);
 	position: absolute;
-	color: #ff8009;
+
+	color: #f33901;
 	overflow: hidden;
 	width: 0%;
 	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
@@ -50,7 +51,7 @@
 .loader-wrapper:nth-child(3) > h1::before {
 	content: attr(data-text);
 	position: absolute;
-	color: #ffffff;
+	color: #f30101;
 	overflow: hidden;
 	width: 0%;
 	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
@@ -61,7 +62,7 @@
 .loader-wrapper:nth-child(6) > h1::before {
 	content: attr(data-text);
 	position: absolute;
-	color: #3dfc03;
+	color: #eff301ef;
 	overflow: hidden;
 	width: 0%;
 	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);

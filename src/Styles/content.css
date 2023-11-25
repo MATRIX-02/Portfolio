@@ -5,4 +5,6 @@
 	border-radius: 1rem;
 	padding: 2rem;
 	overflow: auto;
+	display: flex;
+	justify-content: space-evenly;
 }
