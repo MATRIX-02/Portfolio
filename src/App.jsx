@@ -4,12 +4,12 @@ import Nav from "./Components/nav";
 import Logo from "./Components/logo";
 import Menu from "./Components/menu";
 import Content from "./Components/content";
-// import PreLoader from "./Components/PreLoader";
+import PreLoader from "./Components/PreLoader";
 
 const App = () => {
 	return (
 		<>
-			{/* <PreLoader /> */}
+			<PreLoader />
 			<div className="container">
 				<div className="navbar">
 					<Logo className="logo-container" />

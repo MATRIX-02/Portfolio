@@ -36,10 +36,32 @@
 	-webkit-text-stroke: 0.03vw rgba(255, 255, 255, 0.6);
 }
 
-.loader-wrapper > h1::before {
+.loader-wrapper:nth-child(2) > h1::before {
 	content: attr(data-text);
 	position: absolute;
-	color: rgb(255, 255, 255);
+	color: #ff8009;
+	overflow: hidden;
+	width: 0%;
+	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+	animation: fill 3s forwards;
+	animation-delay: 2s;
+}
+
+.loader-wrapper:nth-child(3) > h1::before {
+	content: attr(data-text);
+	position: absolute;
+	color: #ffffff;
+	overflow: hidden;
+	width: 0%;
+	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+	animation: fill 3s forwards;
+	animation-delay: 2s;
+}
+
+.loader-wrapper:nth-child(6) > h1::before {
+	content: attr(data-text);
+	position: absolute;
+	color: #3dfc03;
 	overflow: hidden;
 	width: 0%;
 	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
