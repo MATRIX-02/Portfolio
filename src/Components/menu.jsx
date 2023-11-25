@@ -10,23 +10,23 @@ const Menu = () => {
 			<div className="menu-container">
 				<ul className="menu-list">
 					<li className="menu-item">
-						<GoHome size={25} className="menu-icon" />
+						<GoHome color="#D93643" size={25} className="menu-icon" />
 						Home
 					</li>
 					<li className="menu-item">
-						<FaCode size={25} className="menu-icon" />
+						<FaCode color="#F77F00" size={25} className="menu-icon" />
 						Snippets
 					</li>
 					<li className="menu-item">
-						<LuGithub size={25} className="menu-icon" />
+						<LuGithub color="#2A9D8F" size={25} className="menu-icon" />
 						Github
 					</li>
 					<li className="menu-item">
-						<FiLinkedin size={25} className="menu-icon" />
+						<FiLinkedin color="#0277B5" size={25} className="menu-icon" />
 						LinkedIn
 					</li>
 					<li className="menu-item">
-						<BiLogoInstagram size={25} className="menu-icon" />
+						<BiLogoInstagram color="#B5179E" size={25} className="menu-icon" />
 						Instagram
 					</li>
 				</ul>
