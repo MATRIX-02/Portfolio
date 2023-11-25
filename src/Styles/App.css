@@ -1,0 +1,31 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
+
+@import "./nav.css";
+@import "./PreLoader.css";
+@import "./Logo.css";
+@import "./menu.css";
+@import "./content.css";
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: "Helvetica Neue", sans-serif;
+	background: #14131a;
+	color: white;
+	/* overflow: hidden; */
+}
+
+.container {
+	/* margin: 2rem; */
+	padding: 2rem 2rem 0;
+}
+
+.menu-content {
+	display: flex;
+}

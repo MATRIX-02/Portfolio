@@ -1,0 +1,33 @@
+.menu-container {
+	margin: 1rem 0;
+	width: 250px;
+	height: 85dvh;
+	background: #1c1b23;
+	border-radius: 1rem;
+	overflow: auto;
+	user-select: none;
+}
+
+.menu-list {
+	margin: 0.9rem;
+
+	list-style-type: none;
+	color: #797880;
+	display: flex;
+	flex-direction: column;
+	justify-content: left baseline;
+}
+
+.menu-item {
+	margin: 0.9rem 0;
+
+	padding: 0.9rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	font-size: 0.9rem;
+}
+
+.menu-icon {
+	margin-right: 1rem;
+}

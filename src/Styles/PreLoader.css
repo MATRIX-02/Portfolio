@@ -1,0 +1,57 @@
+.loader {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	font-family: "Roslindale Display";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000;
+	user-select: none;
+}
+
+.loader-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+}
+
+.loader-wrapper {
+	overflow: hidden;
+	display: flex;
+	/* border: solid 2px white; */
+}
+
+.loader-wrapper > h1 {
+	position: relative;
+	color: #000;
+	text-transform: uppercase;
+	font-size: 5vw;
+	font-weight: 500;
+	line-height: 90%;
+	padding-top: 0.2em;
+	word-spacing: 0.2em;
+	-webkit-text-stroke: 0.03vw rgba(255, 255, 255, 0.6);
+}
+
+.loader-wrapper > h1::before {
+	content: attr(data-text);
+	position: absolute;
+	color: rgb(255, 255, 255);
+	overflow: hidden;
+	width: 0%;
+	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+	animation: fill 3s forwards;
+	animation-delay: 2s;
+}
+
+@keyframes fill {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
