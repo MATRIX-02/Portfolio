@@ -7,6 +7,16 @@
 @import "./content.css";
 @import "./project-card.css";
 
+@font-face {
+	font-family: "Antipasto";
+	src: url("../assets/AntipastoPro.ttf");
+}
+
+@font-face {
+	font-family: "LeagueSpartan";
+	src: url("../assets/LeagueSpartan-Bold.otf");
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -15,7 +25,7 @@
 
 html,
 body {
-	font-family: "Helvetica Neue", sans-serif;
+	font-family: "Helvetica", sans-serif;
 	background: #14131a;
 	color: white;
 	/* overflow: hidden; */

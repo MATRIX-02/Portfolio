@@ -7,6 +7,7 @@ const Content = () => {
 			<ProjectCard />
 			<ProjectCard />
 			<ProjectCard />
+			<ProjectCard />
 		</div>
 	);
 };

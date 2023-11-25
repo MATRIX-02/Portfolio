@@ -2,7 +2,7 @@
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	/* font-family: "Roslindale Display"; */
+	/* font-family: "LeagueSpartan"; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,6 +21,7 @@
 .loader-wrapper {
 	overflow: hidden;
 	display: flex;
+	font-weight: 900;
 	/* border: solid 2px white; */
 }
 
@@ -29,7 +30,7 @@
 	color: #000;
 	text-transform: uppercase;
 	font-size: 5vw;
-	font-weight: 500;
+	font-weight: bolder;
 	line-height: 90%;
 	padding-top: 0.2em;
 	word-spacing: 0.2em;

@@ -20,12 +20,18 @@
 
 .menu-item {
 	margin: 0.9rem 0;
-
 	padding: 0.9rem;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
 	font-size: 0.9rem;
+	transition: bottom 0.2s ease-in-out;
+	position: relative;
+	bottom: 0;
+}
+
+.menu-item:hover {
+	bottom: 0.3rem;
 }
 
 .menu-icon {
