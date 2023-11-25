@@ -33,6 +33,13 @@
 .menu-item:hover {
 	bottom: 0.3rem;
 }
+.menu-item > a {
+	color: #797880;
+	text-decoration: none;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
 
 .menu-icon {
 	margin-right: 1rem;

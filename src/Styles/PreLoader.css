@@ -8,6 +8,7 @@
 	align-items: center;
 	background-color: #000;
 	user-select: none;
+	z-index: 1;
 }
 
 .loader-container {
