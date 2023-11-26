@@ -7,19 +7,19 @@ const projectList = [
 	},
 	{
 		id: 1002,
-		projectImg: "../../public/Images/discord-clone.webp",
+		projectImg: "./Images/discord-clone.webp",
 		projectName: "Project2",
 		projectDesc: "This is a sample project 2",
 	},
 	{
 		id: 1003,
-		projectImg: "../../public/Images/discord-clone.webp",
+		projectImg: "./Images/discord-clone.webp",
 		projectName: "Project3",
 		projectDesc: "This is a sample project 3",
 	},
 	{
 		id: 1004,
-		projectImg: "../../public/Images/discord-clone.webp",
+		projectImg: "./Images/discord-clone.webp",
 		projectName: "Project4",
 		projectDesc: "This is a sample project 4",
 	},
