@@ -5,7 +5,8 @@
 	border-radius: 1rem;
 	overflow: hidden;
 	background: #fff;
-	/* display: inline-block; */
+	cursor: pointer;
+	user-select: none;
 }
 
 .project-image > img {

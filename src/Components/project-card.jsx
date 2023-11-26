@@ -5,7 +5,7 @@ const ProjectCard = () => {
 		<>
 			<div className="project-card">
 				<div className="project-image">
-					<img src={image} alt="" />
+					<img src={image} alt="" draggable="false" />
 				</div>
 				<div className="project-desc">
 					<h4>Project</h4>
