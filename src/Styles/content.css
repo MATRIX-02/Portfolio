@@ -5,7 +5,53 @@
 	border-radius: 1rem;
 	padding: 2rem;
 	overflow: auto;
+}
+
+.content-container h3 {
+	font-family: "NeueMontreal";
+	font-weight: 400;
+	margin: 1.4rem;
+	letter-spacing: 0.1rem;
+}
+
+.profile-banner {
+	height: 11rem;
 	display: flex;
-	justify-content: space-evenly;
+	align-items: center;
+	padding: 2rem;
+	background-image: url("../assets/banner-background.jpg");
+	background-size: cover;
+}
+
+.profile-avatar {
+	height: 6vw;
+	width: 6vw;
+	border-radius: 50%;
+	border: 0.2rem solid white;
+	padding: 2rem;
+	/* overflow: hidden; */
+	background-image: url("../assets/profile-pic.png");
+	background-size: inherit;
+}
+/* .profile-avatar > img {
+	height: inherit;
+	width: inherit;
+	border-radius: inherit;
+	padding: 2rem;
+} */
+
+.profile-banner > h1 {
+	margin-left: 1rem;
+	padding: 1rem;
+}
+
+.projects {
+	display: flex;
+
 	flex-wrap: wrap;
+}
+
+a {
+	text-decoration: none;
+	/* color: ; */
 }

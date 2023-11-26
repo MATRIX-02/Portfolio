@@ -19,7 +19,8 @@
 	background: #fff;
 	color: #000;
 	border-radius: 0 0 1rem 1rem;
-	font-size: 1.4vmin;
+	/* font-size: 1.4vmin; */
+	font-size: small;
 }
 
 .project-desc > p {
