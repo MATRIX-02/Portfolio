@@ -55,3 +55,7 @@ a {
 	text-decoration: none;
 	/* color: ; */
 }
+
+.tech-stack {
+	display: flex;
+}

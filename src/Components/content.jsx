@@ -1,7 +1,24 @@
 import ProjectCard from "./project-card";
 import projectList from "../utils/config";
+import TechStack from "./techStack";
 
 const Content = () => {
+	const Frontend = "Frontend";
+	const FrontendList = [
+		"HTML",
+		"CSS",
+		"JavaScript",
+		"Gsap",
+		"Tailwind",
+		"React Js",
+	];
+
+	const Backend = "Backend";
+	const BackendList = ["Node.js"];
+
+	const Others = "Others";
+	const OtherList = ["Figma", "Adobe XD", "C++", "Python"];
+
 	return (
 		<div className="content-container">
 			<div className="profile-banner">
@@ -18,7 +35,11 @@ const Content = () => {
 				))}
 			</div>
 			<h3>What I know</h3>
-			<div className="techStack"></div>
+			<div className="tech-stack">
+				<TechStack domain={Frontend} techList={FrontendList} />
+				<TechStack domain={Backend} techList={BackendList} />
+				<TechStack domain={Others} techList={OtherList} />
+			</div>
 		</div>
 	);
 };

@@ -6,6 +6,7 @@
 @import "./menu.css";
 @import "./content.css";
 @import "./project-card.css";
+@import "./TechCard.css";
 
 @font-face {
 	font-family: "NeueMontreal";
