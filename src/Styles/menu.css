@@ -3,7 +3,7 @@
 	width: 250px;
 	height: 85dvh;
 	background: #1c1b23;
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	overflow: auto;
 	user-select: none;
 }
@@ -20,7 +20,7 @@
 
 .menu-item {
 	margin: 0.9rem 0;
-	padding: 0.9rem;
+	/* padding: 0.9rem; */
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -34,11 +34,13 @@
 	bottom: 0.3rem;
 }
 .menu-item > a {
+	/* margin: 0.9rem; */
+	padding: 0.9rem;
 	color: #797880;
 	text-decoration: none;
-	width: 100%;
 	display: flex;
 	align-items: center;
+	width: 100%;
 }
 
 .menu-icon {

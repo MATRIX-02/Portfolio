@@ -10,14 +10,16 @@ const Menu = () => {
 			<div className="menu-container">
 				<ul className="menu-list">
 					<li className="menu-item">
-						<a href="/">
+						<a href="#">
 							<GoHome color="#D93643" size={25} className="menu-icon" />
 							Home
 						</a>
 					</li>
 					<li className="menu-item">
-						<FaCode color="#F77F00" size={25} className="menu-icon" />
-						Snippets
+						<a href="#">
+							<FaCode color="#F77F00" size={25} className="menu-icon" />
+							Snippets
+						</a>
 					</li>
 					<li className="menu-item">
 						<a
