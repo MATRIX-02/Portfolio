@@ -1,7 +1,7 @@
 const projectList = [
 	{
 		id: 1001,
-		projectImg: "../src/assets/discord-clone.webp",
+		projectImg: "../assets/discord-clone.webp",
 		projectName: "Project1",
 		projectDesc: "This is a sample project 1",
 	},
