@@ -19,7 +19,7 @@
 	display: flex;
 	align-items: center;
 	padding: 2rem;
-	background-image: url("../../public/Images/banner-background.jpg");
+	background-image: url("/Images/banner-background.jpg");
 	background-size: cover;
 }
 
@@ -30,7 +30,7 @@
 	border: 0.2rem solid white;
 	padding: 2rem;
 	/* overflow: hidden; */
-	background-image: url("../../public/Images/profile-pic.png");
+	background-image: url("/Images/profile-pic.png");
 	background-size: inherit;
 }
 /* .profile-avatar > img {

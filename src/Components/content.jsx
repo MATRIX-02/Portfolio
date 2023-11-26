@@ -9,7 +9,7 @@ const Content = () => {
 				<h1>Mayank</h1>
 			</div>
 			<h3>Projects</h3>
-			<div className="projects" >
+			<div className="projects">
 				{projectList.map((project) => (
 					<ProjectCard
 						key={projectList.indexOf(project)}
@@ -17,6 +17,8 @@ const Content = () => {
 					/>
 				))}
 			</div>
+			<h3>What I know</h3>
+			<div className="techStack"></div>
 		</div>
 	);
 };
