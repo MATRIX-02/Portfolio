@@ -8,5 +8,5 @@
 	height: 1.3rem;
 	width: 1.3rem;
 	border-radius: 50%;
-	background: rgb(112, 34, 195);
+	background: var(--logo);
 }

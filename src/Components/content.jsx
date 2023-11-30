@@ -28,10 +28,7 @@ const Content = () => {
 			<h3>Projects</h3>
 			<div className="projects">
 				{projectList.map((project) => (
-					<ProjectCard
-						key={projectList.indexOf(project)}
-						projectList={project}
-					/>
+					<ProjectCard key={project.id} projectList={project} />
 				))}
 			</div>
 			<h3>What I know</h3>

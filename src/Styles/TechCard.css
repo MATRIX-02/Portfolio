@@ -2,7 +2,7 @@
 	margin: 1rem;
 	padding: 0.2rem;
 	border-radius: 0.3rem;
-	background-color: #1c1b23;
+	background-color: var(--card-bg);
 	width: 18rem;
 	height: 10rem;
 	overflow: hidden;
@@ -20,12 +20,12 @@
 	/* border: 1px solid red; */
 	height: 2.3rem;
 	width: fit-content;
-	color: #a3a3a3;
+	color: var(--text-primary);
 	font-size: 0.8rem;
 	display: flex;
 	align-items: center;
 	height: 100%;
 	padding: 0.3rem;
 	margin: 0.2rem;
-	background-color: #14131a;
+	background-color: var(--card-bg-secondary);
 }

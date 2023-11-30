@@ -2,11 +2,10 @@
 	margin: 1rem 0;
 	width: 250px;
 	height: 85dvh;
-	background: #1c1b23;
+	background: var(--card-bg);
 	border-radius: 0.5rem;
 	overflow: auto;
 	user-select: none;
-	
 }
 
 .menu-list {
@@ -37,7 +36,7 @@
 .menu-item > a {
 	/* margin: 0.9rem; */
 	padding: 0.9rem;
-	color: #797880;
+	color: var(--text-primary);
 	text-decoration: none;
 	display: flex;
 	align-items: center;
@@ -46,4 +45,21 @@
 
 .menu-icon {
 	margin-right: 1rem;
+}
+
+.menu-container::-webkit-scrollbar {
+	width: 10px;
+}
+
+.menu-container::-webkit-scrollbar-track {
+	background: var(--card-bg);
+}
+
+.menu-container::-webkit-scrollbar-thumb {
+	background: var(--logo);
+	/* border-radius: 4px; */
+}
+
+.menu-container::-webkit-scrollbar-thumb:hover {
+	background: #282633;
 }

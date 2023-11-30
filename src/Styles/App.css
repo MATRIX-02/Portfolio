@@ -18,25 +18,78 @@
 	src: url("../assets/LeagueSpartan-Bold.otf");
 }
 
+:root {
+	--background: #14131a;
+	--text-primary: #fff;
+	--text-secondary: #999999;
+	--card-bg: #1c1b23;
+	--card-bg-secondary: #14131a;
+	--logo: #7022c3;
+	--contact-me-primary: #455eb5;
+	--contact-me-secondary: #5643cc;
+	--contact-me-tertiary: #673fd7;
+}
+
+[data-theme="light"] {
+	--background: #fdf4f5;
+	--text-primary: #222222;
+	--text-secondary: #383838;
+	--card-bg: #c0dbea;
+	--card-bg-secondary: #fdf4f5;
+	--logo: #51c2ff;
+	--contact-me-primary: #c0dbea;
+	--contact-me-secondary: #d8a0e7;
+	--contact-me-tertiary: #e8a0bf;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	/* transition: all 0.3s ease-in-out; */
+	transition: background 0.3s ease-in-out;
 }
 
 html,
 body {
 	font-family: "Helvetica", sans-serif;
-	background: #14131a;
 	color: white;
 	/* overflow: hidden; */
 }
 
+.navbar {
+	display: flex;
+	justify-content: space-between;
+}
+
 .container {
 	/* margin: 2rem; */
+	height: 100vh;
+	background: var(--background);
 	padding: 2rem 2rem 0;
 }
 
 .menu-content {
 	display: flex;
+}
+
+.theme-container {
+	display: flex;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--text-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--card-bg);
+	/* border-radius: 4px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #282633;
 }

@@ -12,6 +12,7 @@
 	font-weight: 400;
 	margin: 1.4rem;
 	letter-spacing: 0.1rem;
+	color: var(--text-primary);
 }
 
 .profile-banner {
