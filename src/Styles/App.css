@@ -28,6 +28,7 @@
 	--contact-me-primary: #455eb5;
 	--contact-me-secondary: #5643cc;
 	--contact-me-tertiary: #673fd7;
+	--banner: url("/Images/banner-background.jpg");
 }
 
 [data-theme="light"] {
@@ -40,6 +41,7 @@
 	--contact-me-primary: #c0dbea;
 	--contact-me-secondary: #d8a0e7;
 	--contact-me-tertiary: #e8a0bf;
+	--banner: url("/Images/banner-background-white.jpg");
 }
 
 * {

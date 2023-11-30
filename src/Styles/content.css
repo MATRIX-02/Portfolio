@@ -20,7 +20,7 @@
 	display: flex;
 	align-items: center;
 	padding: 2rem;
-	background-image: url("/Images/banner-background.jpg");
+	background-image: var(--banner);
 	background-size: cover;
 }
 
