@@ -5,7 +5,7 @@
 	background-color: var(--card-bg);
 	width: 18rem;
 	height: 10rem;
-	overflow: hidden;
+	overflow: auto;
 	user-select: none;
 }
 
@@ -20,12 +20,17 @@
 	/* border: 1px solid red; */
 	height: 2.3rem;
 	width: fit-content;
-	color: var(--text-primary);
 	font-size: 0.8rem;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	height: 100%;
+}
+
+.tech-list>span{
+	border-radius: .2rem;
 	padding: 0.3rem;
-	margin: 0.2rem;
 	background-color: var(--card-bg-secondary);
+	margin: 0.2rem;
+	color: var(--text-primary);
 }

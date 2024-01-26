@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { FaMoon } from "react-icons/fa";
 import { FaSun } from "react-icons/fa";
 

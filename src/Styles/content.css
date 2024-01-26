@@ -31,7 +31,7 @@
 	border: 0.2rem solid white;
 	padding: 2rem;
 	/* overflow: hidden; */
-	background-image: url("/Images/profile-pic.png");
+	background-image: var(--profile-pic);
 	background-size: inherit;
 }
 /* .profile-avatar > img {

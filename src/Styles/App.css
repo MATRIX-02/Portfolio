@@ -29,6 +29,7 @@
 	--contact-me-secondary: #5643cc;
 	--contact-me-tertiary: #673fd7;
 	--banner: url("/Images/banner-background.jpg");
+	--profile-pic: url("/Images/Profile_picture_light.png");
 }
 
 [data-theme="light"] {
@@ -42,6 +43,7 @@
 	--contact-me-secondary: #d8a0e7;
 	--contact-me-tertiary: #e8a0bf;
 	--banner: url("/Images/banner-background-white.jpg");
+	--profile-pic: url("/Images/Profile_picture_dark.png");
 }
 
 * {
@@ -79,19 +81,27 @@ body {
 	display: flex;
 }
 
-::-webkit-scrollbar {
+.content-container::-webkit-scrollbar {
 	width: 10px;
+	height: 50dvh;
+}
+	
+.menu-container::-webkit-scrollbar {
+	width: 5px;
 }
 
-::-webkit-scrollbar-track {
-	background: var(--text-secondary);
+.content-container::-webkit-scrollbar-track,
+.menu-container::-webkit-scrollbar-track {
+	background: var(--text-primary);
 }
 
-::-webkit-scrollbar-thumb {
+.content-container::-webkit-scrollbar-thumb,
+.menu-container::-webkit-scrollbar-thumb {
 	background: var(--card-bg);
 	/* border-radius: 4px; */
 }
 
-::-webkit-scrollbar-thumb:hover {
-	background: #282633;
+.content-container::-webkit-scrollbar-thumb:hover,
+.menu-container::-webkit-scrollbar-thumb:hover {
+	background: var(--logo);
 }

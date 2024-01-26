@@ -9,9 +9,13 @@
 	user-select: none;
 }
 
+.project-image{
+	height: 70%;
+}
+
 .project-image > img {
 	max-width: 100%;
-	/* height: 100%; */
+	height: 100%;
 }
 
 .project-desc {
