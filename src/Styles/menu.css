@@ -6,11 +6,11 @@
 	border-radius: 0.5rem;
 	overflow: auto;
 	user-select: none;
+	transition: transform 0.3s ease; 
 }
 
 .menu-list {
 	margin: 0.9rem;
-
 	list-style-type: none;
 	color: #797880;
 	display: flex;
@@ -24,6 +24,7 @@
 	cursor: pointer;
 	display: flex;
 	align-items: center;
+	
 	font-size: 0.9rem;
 	transition: bottom 0.2s ease-in-out;
 	position: relative;
@@ -64,9 +65,42 @@
 	background: #282633;
 }
 
+.enter_menu{
+	display: none;
+}
 
 @media screen and (max-width: 1000px) {
+
+	.enter_menu{
+		display:block;
+	}
+
 	.menu-container{
-		display: none;
+		position: absolute;
+		top: 0;
+		/* left: 50rem;		 */
+		background: #1b1b1d;
+		height: 100vh;
+		width: 100vw;
+		border-radius: 0;
+		margin: 0;
+		transform: translateX(100%);
+	}
+
+	.menu-list{
+		margin-top: 5rem;
+	}
+	
+	.menu-item{
+		font-size: 1.2rem;
+	}
+	
+	.menu-item > a{
+		
+		justify-content: center;
+	}
+
+	.menu-toggle{
+		transform: translateX(0);
 	}
 }

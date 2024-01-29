@@ -125,3 +125,12 @@ body {
 
 	}
 }
+
+@media screen  and (max-width: 350px){
+	.navbar{
+		justify-content: center;
+	}
+	.theme-changer{
+		margin: 0 .5rem;
+	}
+}
