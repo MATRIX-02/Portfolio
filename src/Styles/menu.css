@@ -63,3 +63,10 @@
 .menu-container::-webkit-scrollbar-thumb:hover {
 	background: #282633;
 }
+
+
+@media screen and (max-width: 1000px) {
+	.menu-container{
+		display: none;
+	}
+}

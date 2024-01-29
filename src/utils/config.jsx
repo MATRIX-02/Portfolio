@@ -33,4 +33,3 @@ export const techList = [
 		list: ["Figma", "Adobe XD", "C++", "Python"],
 	}
 ]
-

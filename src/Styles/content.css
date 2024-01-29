@@ -1,6 +1,7 @@
 .content-container {
 	height: 85dvh;
-	width: 83dvw;
+	/* width: 83dvw; */
+	width: 100%;
 	margin: 1rem 0 1rem 1rem;
 	border-radius: 1rem;
 	padding: 2rem;
@@ -25,14 +26,14 @@
 }
 
 .profile-avatar {
-	height: 6vw;
-	width: 6vw;
+	height: 8rem;
+	width: 8rem;
 	border-radius: 50%;
 	border: 0.2rem solid white;
 	padding: 2rem;
 	/* overflow: hidden; */
 	background-image: var(--profile-pic);
-	background-size: inherit;
+	background-size: cover;
 }
 /* .profile-avatar > img {
 	height: inherit;
@@ -48,9 +49,11 @@
 
 .projects {
 	display: flex;
-
 	flex-wrap: wrap;
+	width: 100%;
 }
+
+
 
 a {
 	text-decoration: none;
@@ -59,4 +62,42 @@ a {
 
 .tech-stack {
 	display: flex;
+	flex-wrap: wrap;
+	
 }
+
+@media screen and (max-width: 600px) {
+	.profile-avatar{
+		width: 6rem;
+		height: 6rem;
+		padding: 0;
+	}
+
+	.profile-banner > h1{
+		padding: 0;
+	}
+}
+
+@media screen  and (max-width: 1000px){
+	
+	.content-container{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		margin-top: 1rem;
+	}
+
+	.profile-banner{
+		justify-content: center;
+		padding: .3rem;
+	}
+	
+	.projects{
+		justify-content: center;
+	}
+
+	.tech-stack{
+		justify-content: center;
+	}
+}
+

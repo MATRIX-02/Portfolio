@@ -1,7 +1,7 @@
 .project-card {
 	margin: 1rem;
 	width: 18vw;
-	height: 15vw;
+	min-height: 15vh;
 	border-radius: 1rem;
 	overflow: hidden;
 	background: var(--card-bg);
@@ -11,28 +11,65 @@
 
 .project-image{
 	height: 70%;
+	overflow: hidden;
+	width: 100%;
+	object-fit:fill;
 }
 
-.project-image > img {
-	max-width: 100%;
-	height: 100%;
-}
 
 .project-desc {
-	padding: 1vw;
+	padding: .7rem;
 	/* background: #1c1b23; */
 	color: #000;
 	border-radius: 0 0 1rem 1rem;
 	/* font-size: 1.4vmin; */
-	font-size: small;
+	/* font-size: small; */
+	font-size: 1rem;
 }
 
 .project-desc > p {
-	/* font-size: 0.8rem; */
+	font-size: 0.8rem;
 	color: var(--text-secondary);
 	padding-top: 0.3rem;
 }
 
 .project-desc > h4 {
 	color: var(--text-primary);
+}
+
+
+@media screen and (max-width: 1800px) and (min-width:1000px) {
+	.project-card {
+		min-width: 27vw;
+		height: 22vw; 
+	}
+
+	
+	.project-desc {
+		font-size: 1rem; /* Adjust font size for smaller screens */
+	}
+
+	.project-desc > p {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.project-card {
+		/* min-width: 24vw; 
+		min-height: 20vw; */
+		width: 75dvw; 
+		/* min-height: 20vw; */
+		height: auto;
+		margin: 0 0 1rem 0;
+	}
+
+	.project-desc {
+		font-size: 1rem; /* Adjust font size for smaller screens */
+		padding: 1rem;
+	}
+
+	.project-desc > p {
+		font-size: .8rem;
+	}
 }

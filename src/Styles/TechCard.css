@@ -4,14 +4,11 @@
 	border-radius: 0.3rem;
 	background-color: var(--card-bg);
 	width: 18rem;
-	height: 10rem;
-	overflow: auto;
 	user-select: none;
 }
 
 .tech-list-container {
 	display: flex;
-
 	flex-wrap: wrap;
 	padding: 0.3rem;
 }
@@ -33,4 +30,10 @@
 	background-color: var(--card-bg-secondary);
 	margin: 0.2rem;
 	color: var(--text-primary);
+}
+
+@media screen and (max-width: 848px){
+	.tech-card{
+		width: 100%;
+	}
 }

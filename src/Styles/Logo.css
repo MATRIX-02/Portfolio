@@ -10,3 +10,9 @@
 	border-radius: 50%;
 	background: var(--logo);
 }
+
+@media screen  and (max-width: 1000px){
+	.circles{
+		display: none;
+	}
+}

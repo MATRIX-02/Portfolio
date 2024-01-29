@@ -23,13 +23,13 @@ const App = () => {
 	return (
 		<div data-theme={theme}>
 			<PreLoader />
-			<div className="container">
 				<div className="navbar">
 					<div className="theme-container">
 						<Logo />
 					</div>
 					<Nav change={handleTheme} />
 				</div>
+			<div className="container">
 				<div className="menu-content">
 					<Menu />
 					<Content />

@@ -58,12 +58,15 @@ html,
 body {
 	font-family: "Helvetica", sans-serif;
 	color: white;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
+
 
 .navbar {
 	display: flex;
 	justify-content: space-between;
+	background: var(--background);
+	padding: 2rem 2rem 0rem;
 }
 
 .container {
@@ -104,4 +107,11 @@ body {
 .content-container::-webkit-scrollbar-thumb:hover,
 .menu-container::-webkit-scrollbar-thumb:hover {
 	background: var(--logo);
+}
+
+
+@media screen  and (max-width: 1000px){
+	.container{
+		padding: 0;
+	}
 }
