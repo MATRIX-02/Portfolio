@@ -86,7 +86,8 @@ body {
 
 .content-container::-webkit-scrollbar {
 	width: 10px;
-	height: 50dvh;
+	/* height: 50dvh; */
+	position: absolute;
 }
 	
 .menu-container::-webkit-scrollbar {
@@ -113,5 +114,14 @@ body {
 @media screen  and (max-width: 1000px){
 	.container{
 		padding: 0;
+	}
+
+	.content-container::-webkit-scrollbar {
+		width: 3px;
+		/* height: 30dvh; */
+	}
+	.content-container::-webkit-scrollbar-track{
+		margin-top: 175px;
+
 	}
 }
