@@ -29,21 +29,21 @@
 	--contact-me-secondary: #5643cc;
 	--contact-me-tertiary: #673fd7;
 	--banner: url("/Images/banner-background.jpg");
-	--profile-pic: url("/Images/Profile_picture_light.png");
+	--profile-pic: url("/Images/Profile_picture_dark.png");
 }
 
 [data-theme="light"] {
+	--profile-pic: url("/Images/Profile_picture_light.png");
 	--background: #fdf4f5;
 	--text-primary: #222222;
 	--text-secondary: #383838;
 	--card-bg: #c0dbea;
 	--card-bg-secondary: #fdf4f5;
 	--logo: #51c2ff;
-	--contact-me-primary: #c0dbea;
-	--contact-me-secondary: #d8a0e7;
-	--contact-me-tertiary: #e8a0bf;
+	--contact-me-primary: #2397d6;
+	--contact-me-secondary: #6354ec;
+	--contact-me-tertiary: #7860e6;
 	--banner: url("/Images/banner-background-white.jpg");
-	--profile-pic: url("/Images/Profile_picture_dark.png");
 }
 
 * {
