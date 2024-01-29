@@ -80,3 +80,15 @@
 		width: 100%;
 	}
 }
+
+@media screen  and (max-width: 1000px){
+	.loader-container{
+		width: 100%;
+	}
+	
+
+	.loader-wrapper > h1{
+		font-size: 7vw;
+		-webkit-text-stroke: .5px rgba(255, 255, 255, 0.6);
+	}
+}
