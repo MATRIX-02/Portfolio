@@ -60,7 +60,7 @@ body {
 	color: white;
 	/* overflow: hidden; */
 	/* height: 100vh; */
-	/* position: fixed; */
+	position: fixed;
 }
 
 
@@ -86,8 +86,7 @@ body {
 
 .content-container::-webkit-scrollbar {
 	width: 10px;
-	/* height: 50dvh; */
-	position: absolute;
+
 }
 	
 .menu-container::-webkit-scrollbar {
@@ -114,6 +113,9 @@ body {
 @media screen  and (max-width: 1000px){
 	.container{
 		padding: 0;
+	}
+	.content-container{
+		padding-bottom: 4rem;
 	}
 
 	.content-container::-webkit-scrollbar {
