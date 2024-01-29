@@ -58,7 +58,7 @@ html,
 body {
 	font-family: "Helvetica", sans-serif;
 	color: white;
-	overflow: hidden;
+	position: fixed;
 }
 
 
