@@ -5,6 +5,7 @@
 	background-color: var(--card-bg);
 	width: 18rem;
 	user-select: none;
+	overflow: auto;
 }
 
 .tech-list-container {

@@ -58,6 +58,8 @@ html,
 body {
 	font-family: "Helvetica", sans-serif;
 	color: white;
+	/* overflow: hidden; */
+	/* height: 100vh; */
 	position: fixed;
 }
 
@@ -71,12 +73,10 @@ body {
 
 .container {
 	/* margin: 2rem; */
+	width: 100vw;
 	height: 100vh;
 	background: var(--background);
 	padding: 2rem 2rem 0;
-}
-
-.menu-content {
 	display: flex;
 }
 

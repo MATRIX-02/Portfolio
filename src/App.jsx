@@ -23,7 +23,6 @@ const App = () => {
 
   const menuHandler = () => {
     setMenuToggle((prev) => !prev);
-    console.log(menuToggle);
   };
 
   return (
@@ -41,10 +40,10 @@ const App = () => {
         />
       </div>
       <div className="container">
-        <div className="menu-content">
+      
           <Menu menuToggle={menuToggle} onToggle={menuHandler} />
           <Content />
-        </div>
+        
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ const Content = () => {
 			<h3>What I know</h3>
 			<div className="tech-stack">
 				{techList.map((tech) => (
-					<TechStack key={tech.key} domain={tech.domain} techList={tech.list} />
+					<TechStack key={tech.id} domain={tech.domain} techList={tech.list} />
 				))}
 			</div>
 		</div>

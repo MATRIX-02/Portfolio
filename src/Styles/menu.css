@@ -80,11 +80,11 @@
 		top: 0;
 		/* left: 50rem;		 */
 		background: #1b1b1d;
-		height: 100vh;
+		height: 100%;
 		width: 100vw;
 		border-radius: 0;
 		margin: 0;
-		transform: translateX(100%);
+		opacity: 0;
 	}
 
 	.menu-list{
@@ -101,6 +101,7 @@
 	}
 
 	.menu-toggle{
-		transform: translateX(0);
+		opacity: 100%;
+		/* overflow: hidden;  */
 	}
 }
