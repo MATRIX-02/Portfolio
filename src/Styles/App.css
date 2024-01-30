@@ -58,9 +58,9 @@ html,
 body {
 	font-family: "Helvetica", sans-serif;
 	color: white;
-	/* overflow: hidden; */
 	/* height: 100vh; */
-	position: fixed;
+	/* position: fixed; */
+	/* max-width: 100vw; */
 }
 
 
@@ -74,7 +74,7 @@ body {
 .container {
 	/* margin: 2rem; */
 	width: 100vw;
-	height: 100vh;
+	height: max-content;
 	background: var(--background);
 	padding: 2rem 2rem 0;
 	display: flex;
@@ -113,6 +113,8 @@ body {
 @media screen  and (max-width: 1000px){
 	.container{
 		padding: 0;
+		margin: 0;
+		overflow: hidden;
 	}
 	.content-container{
 		padding-bottom: 4Mrem;
@@ -125,6 +127,9 @@ body {
 	.content-container::-webkit-scrollbar-track{
 		margin-top: 175px;
 
+	}
+	.positionFixed{
+		position: fixed;
 	}
 }
 

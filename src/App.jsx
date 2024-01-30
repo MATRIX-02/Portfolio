@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,  useEffect } from "react";
 
 import "./Styles/App.css";
 // import useLocalStorage from "use-local-storage";
@@ -25,9 +25,18 @@ const App = () => {
     setMenuToggle((prev) => !prev);
   };
 
+  useEffect(() => {
+    // Update the class or attribute on the html or body tag when isToggleOn changes
+    if (menuToggle) {
+      document.documentElement.classList.add("positionFixed");
+    } else {
+      document.documentElement.classList.remove("positionFixed");
+    }
+  }, [menuToggle]);
+
   return (
     <div data-theme={theme}>
-      <PreLoader />
+      {/* <PreLoader /> */}
       <div className="navbar">
         <div className="theme-container">
           <Logo />
