@@ -10,6 +10,10 @@ const Nav = ({ onToggle, change }) => {
     setIsOpen((prev) => !prev);
   };
 
+  const handleClick = () => {
+    onToggle();
+    handleButtonClick();
+  }
   return (
     <div className="navbar-container">
       <div className="theme-changer">
@@ -21,10 +25,10 @@ const Nav = ({ onToggle, change }) => {
         </label>
       </div>
       <button className="contact-me">Contact Me</button>
-      <div className="enter_menu wrapper" onClick={onToggle}>
+      <div className="enter_menu wrapper" >
         <div
           className={`icon nav-icon-1 ${isOpen ? "open" : ""}`}
-          onClick={handleButtonClick}
+          onClick={handleClick}
         >
           <span></span>
           <span></span>
