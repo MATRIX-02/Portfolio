@@ -13,6 +13,13 @@ export const projectList = [
 		projectDesc: "React Lo-fi Music Player",
 		projectLink: "https://matrix-02.github.io/JustChill/",
 	},
+	{
+		id: 1003,
+		projectImg: "./Images/Site_3.gif",
+		projectName: "Disney+ Hotstar Clone",
+		projectDesc: "React.js, Redux, firebase-Disney+ Hotstar Clone",
+		projectLink: "https://disneyplus-hotstar-clone-2fdee.web.app/",
+	},
 	
 ];
 
