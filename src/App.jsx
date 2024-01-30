@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <div data-theme={theme}>
-      {/* <PreLoader /> */}
+      <PreLoader />
       <div className="navbar">
         <div className="theme-container">
           <Logo />
