@@ -49,13 +49,13 @@ const Menu = ({ onToggle, menuToggle}) => {
         </li>
         <li className="menu-item">
           <a
-            href="https://www.instagram.com/mayank_1.2_/"
+            href="/docs/MAYANK_RESUME (UPDATED).pdf"
             target="_blank"
             rel="noreferrer"
             draggable="false"
           >
-            <BiLogoInstagram color="#B5179E" size={25} className="menu-icon" />
-            Instagram
+            <FaCode color="#F77F00" size={25} className="menu-icon" />
+            Resume
           </a>
         </li>
       </ul>
