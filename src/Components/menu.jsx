@@ -49,7 +49,7 @@ const Menu = ({ onToggle, menuToggle}) => {
         </li>
         <li className="menu-item">
           <a
-            href="/docs/Mayank_Resume.pdf"
+            href="/Portfolio/docs/Mayank_Resume.pdf"
             target="_blank"
             rel="noreferrer"
             draggable="false"
