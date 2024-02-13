@@ -20,6 +20,13 @@ export const projectList = [
 		projectDesc: "React.js, Redux, firebase-Disney+ Hotstar Clone",
 		projectLink: "https://disneyplus-hotstar-clone-2fdee.web.app/",
 	},
+	{
+		id: 1004,
+		projectImg: "./Images/Site_4.gif",
+		projectName: "NomNomFoods",
+		projectDesc: "React.js, Redux, Jest Food Delivery App",
+		projectLink: "https://matrix-02.github.io/NomNomFoods/",
+	},
 	
 ];
 
@@ -27,7 +34,7 @@ export const techList = [
 	{
 		id:2002,
 		domain: "Frontend",
-		list: ["HTML", "CSS", "JavaScript", "GSAP", "Tailwind", "React.js", "Redux"],
+		list: ["HTML", "CSS", "JavaScript", "GSAP", "Tailwind", "React.js", "Redux", "Jest"],
 	},
 	{
 		id:2003,
