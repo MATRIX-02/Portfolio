@@ -38,7 +38,7 @@ const Menu = ({ onToggle, menuToggle}) => {
         </li>
         <li className="menu-item">
           <a
-            href="https://www.linkedin.com/in/mayanksingh122001/"
+            href="https://www.linkedin.com/in/mayank--dev/"
             target="_blank"
             rel="noreferrer"
             draggable="false"
