@@ -41,7 +41,7 @@ export const techList = [
 	{
 		id:2002,
 		domain: "Frontend",
-		list: ["HTML", "CSS", "JavaScript", "GSAP", "Tailwind", "React.js", "Redux", "Jest"],
+		list: ["JavaScript","TypeScript", "GSAP", "Tailwind", "React.js", "Redux", "Jest"],
 	},
 	{
 		id:2003,
