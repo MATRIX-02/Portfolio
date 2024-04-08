@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
+
 import { GoHome } from "react-icons/go";
 import { FaCode } from "react-icons/fa6";
 import { LuGithub } from "react-icons/lu";
 import { FiLinkedin } from "react-icons/fi";
 import { BiLogoInstagram } from "react-icons/bi";
 
-const Menu = ({ onToggle, menuToggle }) => {
+const Menu = ({ menuToggle }) => {
   return (
     <div className={`menu-container ${menuToggle ? "menu-toggle" : ""}`}>
       <ul className="menu-list">

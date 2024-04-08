@@ -5,27 +5,43 @@ import { FaSun } from "react-icons/fa";
 
 const Nav = ({ onToggle, change }) => {
   const [isOpen, setIsOpen] = useState(false);
+  
+  const handleSpacebar = (e) => {
+    if (e.key === ' ') {
+      e.preventDefault();
+    }
+  };
 
-  const handleButtonClick = () => {
+  const handleButtonClick = (e) => {
     setIsOpen((prev) => !prev);
   };
 
-  const handleClick = () => {
+  const handleClick = (e) => {
     onToggle();
     handleButtonClick();
-  }
+  };
   return (
     <div className="navbar-container">
       <div className="theme-changer">
-        <input type="checkbox" className="checkbox" id="checkbox" />
-        <label htmlFor="checkbox" className="checkbox-label" onClick={change}>
+        <input type="checkbox" className="checkbox" id="checkbox"  onKeyDown={handleSpacebar}/>
+        <label
+          htmlFor="checkbox"
+          className="checkbox-label"
+          onClick={change}
+          // onKeyDown={(e) => {
+          //   if (e.key === " " || e.key === "Enter") {
+          //     change();
+          //   }
+          // }}
+          // tabIndex={0}
+        >
           <FaMoon className="fas fa-moon" />
           <FaSun className="fas fa-sun" />
           <span className="ball"></span>
         </label>
       </div>
-      <button className="contact-me">Contact Me</button>
-      <div className="enter_menu wrapper" >
+      {/* <button className="contact-me">Contact Me</button> */}
+      <div className="enter_menu wrapper">
         <div
           className={`icon nav-icon-1 ${isOpen ? "open" : ""}`}
           onClick={handleClick}
