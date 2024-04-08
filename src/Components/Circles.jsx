@@ -1,4 +1,4 @@
-const Logo = () => {
+const Circles = () => {
 	return (
 		<div className="circles">
 			<div className="circle" />
@@ -7,4 +7,4 @@ const Logo = () => {
 	);
 };
 
-export default Logo;
+export default Circles;

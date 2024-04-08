@@ -7,11 +7,9 @@ import { LuGithub } from "react-icons/lu";
 import { FiLinkedin } from "react-icons/fi";
 import { BiLogoInstagram } from "react-icons/bi";
 
-const Menu = ({ onToggle, menuToggle}) => {
-
-  
+const Menu = ({ onToggle, menuToggle }) => {
   return (
-    <div className={`menu-container ${menuToggle ? 'menu-toggle' : ''}`} >
+    <div className={`menu-container ${menuToggle ? "menu-toggle" : ""}`}>
       <ul className="menu-list">
         <li className="menu-item">
           <a href="#" draggable="false">
@@ -19,12 +17,7 @@ const Menu = ({ onToggle, menuToggle}) => {
             Home
           </a>
         </li>
-        {/* <li className="menu-item">
-          <a href="#" draggable="false">
-            <FaCode color="#F77F00" size={25} className="menu-icon" />
-            Snippets
-          </a>
-        </li> */}
+
         <li className="menu-item">
           <a
             href="https://github.com/MATRIX-02"
@@ -45,6 +38,17 @@ const Menu = ({ onToggle, menuToggle}) => {
           >
             <FiLinkedin color="#0277B5" size={25} className="menu-icon" />
             LinkedIn
+          </a>
+        </li>
+        <li className="menu-item">
+          <a
+            href="https://www.instagram.com/mayank_1.2_/"
+            target="_blank"
+            rel="noreferrer"
+            draggable="false"
+          >
+            <BiLogoInstagram color="#8134AF" size={25} className="menu-icon" />
+            Instagram
           </a>
         </li>
         <li className="menu-item">

@@ -3,10 +3,10 @@ import { useState,  useEffect } from "react";
 import "./Styles/App.css";
 // import useLocalStorage from "use-local-storage";
 import Nav from "./Components/nav";
-import Logo from "./Components/logo";
+import Circles from "./Components/Circles";
 import Menu from "./Components/menu";
 import Content from "./Components/content";
-import PreLoader from "./Components/PreLoader";
+import PreLoader from "./Components/PreLoader/PreLoader";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -39,7 +39,7 @@ const App = () => {
       <PreLoader />
       <div className="navbar">
         <div className="theme-container">
-          <Logo />
+          <Circles />
         </div>
 
         <Nav
